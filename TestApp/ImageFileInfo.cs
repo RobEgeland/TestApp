@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Windows.Storage;
 using Windows.Storage.FileProperties;
 using Windows.Storage.Streams;
+using Windows.UI.Core;
 
 namespace TestApp
 {
@@ -23,6 +24,7 @@ namespace TestApp
             var rating = (int)properties.Rating;
             var random = new Random();
             ImageRating = rating == 0 ? random.Next(1, 5) : rating;
+            // Testing git
         }
 
         public StorageFile ImageFile { get; }
